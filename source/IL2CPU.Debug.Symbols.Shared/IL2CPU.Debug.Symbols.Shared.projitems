@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>3e8ce10f-c5d5-4ef2-a4bf-de8ac407be04</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>IL2CPU.Debug.Symbols.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CacheHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DebugInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DebugModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DebugSymbolReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Hashing\TypeHashingAlgorithms.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LocalTypeGenericContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LocalTypeProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Metadata\CachingMetadataStringDecoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Metadata\MetadataHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ObjDump.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ObjectReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pdb\ILSequencePoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pdb\PdbSymbolReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pdb\PortablePdbSymbolReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pdb\UnmanagedPdbSymbolReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SourceInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQL.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SqliteBulkCopy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SQLite.sql" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SQLiteIndexes.sql" />
+  </ItemGroup>
+</Project>
