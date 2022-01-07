@@ -24,8 +24,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{D2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Build.Common", "..\Common\source\Cosmos.Build.Common\Cosmos.Build.Common.csproj", "{8F02A68D-1C14-4665-A41E-076252F2055E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IL2CPU.Debug.Symbols", "source\IL2CPU.Debug.Symbols\IL2CPU.Debug.Symbols.csproj", "{8037EF30-3CC2-4555-ACF0-8392250FAE2C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Core.DebugStub", "source\Cosmos.Core.DebugStub\Cosmos.Core.DebugStub.csproj", "{D8E80776-2800-469B-AE31-D1C016D5E8D3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Debug.Kernel", "..\Cosmos\source\Cosmos.Debug.Kernel\Cosmos.Debug.Kernel.csproj", "{EDE13333-B2E6-4E04-B995-209B8BDFA9D4}"
@@ -34,7 +32,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{27E233BC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IL2CPU.Compiler.Tests", "tests\IL2CPU.Compiler.Tests\IL2CPU.Compiler.Tests.csproj", "{FBA88B9D-F6B3-422C-ABF8-470BB4A4E22E}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "IL2CPU.Debug.Symbols.Shared", "source\IL2CPU.Debug.Symbols.Shared\IL2CPU.Debug.Symbols.Shared.shproj", "{07704FA3-2C65-416F-BA06-EAE2154B981A}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		source\IL2CPU.Debug.Symbols.Shared\IL2CPU.Debug.Symbols.Shared.projitems*{07704fa3-2c65-416f-ba06-eae2154b981a}*SharedItemsImports = 13
+		source\IL2CPU.Debug.Symbols.Shared\IL2CPU.Debug.Symbols.Shared.projitems*{4f903492-cca6-4fd9-a1b6-5e4cc0ce7767}*SharedItemsImports = 5
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
@@ -109,22 +113,6 @@ Global
 		{8F02A68D-1C14-4665-A41E-076252F2055E}.Release-CI|Any CPU.ActiveCfg = Release|Any CPU
 		{8F02A68D-1C14-4665-A41E-076252F2055E}.Release-CI|x86.ActiveCfg = Release|x86
 		{8F02A68D-1C14-4665-A41E-076252F2055E}.Release-CI|x86.Build.0 = Release|x86
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Debug|x86.ActiveCfg = Debug|x86
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Debug|x86.Build.0 = Debug|x86
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Debug-CI|Any CPU.ActiveCfg = Debug|Any CPU
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Debug-CI|Any CPU.Build.0 = Debug|Any CPU
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Debug-CI|x86.ActiveCfg = Debug|x86
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Debug-CI|x86.Build.0 = Debug|x86
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Release|x86.ActiveCfg = Release|x86
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Release|x86.Build.0 = Release|x86
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Release-CI|Any CPU.ActiveCfg = Release|Any CPU
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Release-CI|Any CPU.Build.0 = Release|Any CPU
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Release-CI|x86.ActiveCfg = Release|x86
-		{8037EF30-3CC2-4555-ACF0-8392250FAE2C}.Release-CI|x86.Build.0 = Release|x86
 		{D8E80776-2800-469B-AE31-D1C016D5E8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D8E80776-2800-469B-AE31-D1C016D5E8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8E80776-2800-469B-AE31-D1C016D5E8D3}.Debug|x86.ActiveCfg = Debug|x86
